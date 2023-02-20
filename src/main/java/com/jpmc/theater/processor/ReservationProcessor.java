@@ -103,5 +103,6 @@ public class ReservationProcessor {
         Theater theater = new Theater(LocalDateProvider.singleton());
         ReservationProcessor reservationProcessor = new ReservationProcessor(theater,LocalDateProvider.singleton(),new DiscountCalculator());
         reservationProcessor.printScheduleInText();
+        reservationProcessor.printScheduleInJson();
     }
 }
